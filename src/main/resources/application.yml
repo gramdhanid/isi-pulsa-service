@@ -1,3 +1,17 @@
 spring:
   application:
     name: DansApps
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dansapps
+    username: postgres
+    password: postgrespass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8099
+
+jwt:
+  secret: akupastibisa
